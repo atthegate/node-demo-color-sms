@@ -4,7 +4,9 @@
 
 I had the vague idea of an interactive art installation consisting of a responsive environment that changes colors based on user input. Not entirely original, nor a fully formed idea, but an idea nontheless! 
 
-One method of user interaction I considered was via text messaging. More specifically, the environment encourages users to send it messages which would then be parsed for "mood" and the interpreted mood would be used to change the color of the environment. I decided to test out the first step of such an interaction by simply parsing out specific colors words from a text message. To do this, I threw together this demo using Node.js, Twilio and ngrok.
+One method of user interaction I considered was via text messaging. More specifically, the installation would encourage users to send text messages to a specific phone number, which would then be parsed for "mood" and the interpreted mood would be used to change the color of the installation environment. 
+
+I decided to test out the first step of such an interaction by simply parsing out specific colors words from a text message. To do this, I threw together this demo using Node.js, ngrok and Twilio.
 
 <h1>THE RESULT</h1>
 
@@ -47,11 +49,11 @@ And finally, the Twilio phone number is configured with a TwiMIL app that direct
 
 <img src="screenshots/screenshot_twilio-number.png" height="400">
 
-<img src="screenshots/screenshot_twilio-twiml.png" height="400">
+<img src="screenshots/screenshot_twilio-twiml.png" height="200">
 
-<img src="screenshots/screenshot_twilio-twimil-apps.png" height="400">
+<img src="screenshots/screenshot_twilio-twimil-apps.png" height="200">
 
-<img src="screenshots/screenshot_screenshot_twilio-twimil-app-config.png" height="400">
+<img src="screenshots/screenshot_twilio-twimil-app-config.png" height="400">
 
 In this configuration, I'm using a TwiML app named 'Twiliobot' instead of directly configuring the Messaging response with TwiML/Webhooks. Either way works, I just wanted to try out the TwiML app management.
 
@@ -60,6 +62,14 @@ In this configuration, I'm using a TwiML app named 'Twiliobot' instead of direct
 And that's it! Sort of. 
 
 It will take a bit of trial and error to get the localhost Node.js server, ngrok tunnel, and Twilio TwiML configuration all working happily together. But between Node.js errors, ngrok HTTP response codes, and Twilio debugging alerts, it's relatively painless to troubleshoot when things aren't working.
+
+<h1>FUTURE WORK</h1>
+
+This demo could be extended in a couple ways to work towards the original art installation idea. A couple of ideas for future work...
+<ul>
+<li>Modify the Node.js server to interpret color 'mood' of a text message, instead of simply parsing for matching color words.</li>
+<li>Add external output to the Node.js server, where the response from an incoming text message is not just to send a text message back, but actually control a physical motor, LED strip, etc.</li>
+</ul>
 
 <h1>REFERENCES</h1>
 Some useful references in no particular order...
