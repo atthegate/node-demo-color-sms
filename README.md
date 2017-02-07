@@ -31,7 +31,7 @@ This demo consists of three parts:
 
 The Node.js server is a relatively simple script that (i) receives a Twilio SMS message, (ii) parses the message string for any matching color words, and (iii) sends back a Twilio SMS response.
 
-To start the Node.js server, simply run the following command in an OSX terminal...<code>node node-demo-color-sms.js</code>. This should use port 3000 by default (as does the ngrok tunnel), so if you want to use a different port, plan accordingly.
+To start the Node.js server, simply run the following command in an OSX terminal...<code>node color-sms.js</code>. This should use port 3000 by default (as does the ngrok tunnel), so if you want to use a different port, plan accordingly.
 
 NOTE: This demo uses an environment variable to authenticate the Twilio service, so make sure you run <code>export TWILIO_AUTH_TOKEN=[your-twilio-auth-token]</code> in the terminal before initializing the Node.js server.
 
