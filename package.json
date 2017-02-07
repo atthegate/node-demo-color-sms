@@ -1,0 +1,26 @@
+{
+  "name": "node-demo-color-sms",
+  "version": "1.0.0",
+  "description": "SMS Parsing Using Node.js, Twilio and Ngrok",
+  "main": "node-demo-color-sms.js",
+  "scripts": {
+    "start": "node node-demo-color-sms.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/engelsjk/node-demo-color-sms.git"
+  },
+  "keywords": [
+    "SMS",
+    "Twilio",
+    "ngrok",
+    "Node"
+  ],
+  "author": "Jon Engelsman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/engelsjk/node-demo-color-sms/issues"
+  },
+  "homepage": "https://github.com/engelsjk/node-demo-color-sms#readme"
+}
